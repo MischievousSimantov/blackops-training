@@ -287,8 +287,137 @@
 
         > What is getty and agetty?
 
-**Nsswitch**
+**Nsswitch(1h)**
 
-Read about the [name service
-switch](https://en.wikipedia.org/wiki/Name_Service_Switch) and its
-[configuration](https://developers.redhat.com/blog/2018/11/26/etc-nsswitch-conf-non-complexity).
+-   Read about the [name service
+    switch](https://en.wikipedia.org/wiki/Name_Service_Switch) and its
+    [configuration](https://developers.redhat.com/blog/2018/11/26/etc-nsswitch-conf-non-complexity).
+
+    Answer the following questions:
+
+    -   What are the different service options?
+
+        > What are the different switching options?
+
+**Advanced commands and tools for linux administrators(8h)**
+
+-   Read about and use the following commands, for each of them write
+    what it does:
+
+    -   jq
+
+        > lsof
+
+        > lspci
+
+        > lsblk
+
+        > strace
+
+        > fdisk
+
+        > mkfs
+
+        > tune2fs
+
+        > fsck
+
+        > crontab
+
+        > nmcli
+
+        > nmtui
+
+        > tcpdump
+
+        > nmap
+
+        > telnet
+
+        > netcat
+
+    Answer the following questions:
+
+    -   Use one of the above command and find out what is the largest
+        > root directory, why is that directory the largest?
+
+        > How can you change the dns server of a host, explain in
+        > detail?
+
+        > Can you add another network interface to your host, how can u
+        > do that? And how does it not interfere with the other
+        > interface?
+
+    Load up a test web server and create a chat.
+
+**LVM - Logical volume manager(1.5h)**
+
+-   Read about
+    [lvms](https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations).
+
+    Answer the following questions.
+
+    -   Why can't you easily decrease the size of a volume?
+
+        > Why would we want to use logical volumes?
+
+**File system concepts(2h)**
+
+-   Read about [different unix
+    filesystems](https://opensource.com/article/18/4/ext4-filesystem),
+    and
+    [inodes](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/).
+
+    Answer the following questions:
+
+    -   What is xfs?
+
+        > What is the connection between inodes and lvm?
+
+**Advanced Linux and Security(2.5h)**
+
+-   Read about [namespaces and
+    cgroups](https://www.nginx.com/blog/what-are-namespaces-cgroups-how-do-they-work/),
+    [selinux](https://www.techtarget.com/searchdatacenter/definition/SELinux-Security-Enhanced-Linux)
+    and
+    [capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html).
+
+    Answer the following questions:
+
+    -   Why do we need cgroups?
+
+        > What is the connection between namespaces and containers?
+
+        > What does selinux seek to solve?
+
+        > What is the difference between selinux and AppArmor?
+
+        > Explain why there are that many capabilities. Can you devide
+        > the different capabilities to major groups?
+
+**Final drill(14h)**
+
+-   Read about Ansible, Idempotence, Ansible role, Ansible inventory and
+    Ansible best practices
+
+    Create a ansible role that when is run on a host achieves the
+    following:
+
+    -   Installs git, docker, nslookup, dig.
+
+        > Adds admin user called admin and creates a password for it.
+
+        > Disables root ssh authentication.
+
+        > Turns on firewall and selinux.
+
+        > Mounts nfs directory into /mnt/nfs-mount.
+
+        > Increases open files limit to 50000 (os-wide).
+
+        > Increases tcp-buffer allowed open ports range - 1024 to 65000.
+
+        > Increases tcp-buffer read write memory limit to 2mb (both
+        > default and max).
+
+    The ansible role must follow the best practices.
